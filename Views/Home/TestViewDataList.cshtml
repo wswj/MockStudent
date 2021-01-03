@@ -1,0 +1,13 @@
+﻿@using MockStudentManager.Models
+@{
+    ViewData["Title"] = "TestViewDataList";
+}
+
+<h1>TestViewDataList</h1>
+@foreach (var student in ViewData["students"] as List<Student>)
+{
+    <div>@student.Email</div>
+    <div>@student.Major</div>
+    <div>@student.Name</div>
+}
+

@@ -1,0 +1,11 @@
+﻿@using MockStudentManager.Models 
+@{
+    ViewData["Title"] = "TestViewData";
+}
+
+<h1>TestViewData</h1>
+@{ var student = ViewData["student"] as Student; }
+<div>@student.Name</div>
+<div>@student.Email</div>
+<div>@student.Major</div>
+
